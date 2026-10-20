@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #FAF7F2;
+    --color-maroon: #6B1D2F;
+    --color-maroon-dark: #4A101E;
+    --color-maroon-light: #8E2B43;
+    --color-rose: #E8B4B8;
+    --color-rose-light: #F7E7E9;
+    --color-gold: #C5A059;
+    --color-gold-light: #E8D3A2;
+    --color-gold-dark: #9A7B38;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #2D2424;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-decorative {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Luxury gold shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(197, 160, 89, 0.1) 0%,
+    rgba(232, 211, 162, 0.5) 50%,
+    rgba(197, 160, 89, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Subtle pulse glow for Islamic lanterns */
+@keyframes lanternGlow {
+  0%, 100% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 12px rgba(232, 211, 162, 0.6));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 24px rgba(232, 211, 162, 0.95));
+  }
+}
+
+.lantern-glow {
+  animation: lanternGlow 3.5s ease-in-out infinite;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C3A5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}

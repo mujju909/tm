@@ -1,0 +1,6 @@
+{
+  "name": "Taufique & Madiha — Islamic Wedding Invitation",
+  "description": "Interactive digital Islamic wedding invitation for Taufique and Madiha. Featuring Nikah and Walima ceremony details, interactive scratch cards, calendar sync, maps, and music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
